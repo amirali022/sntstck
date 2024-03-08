@@ -1,12 +1,15 @@
 ## Predicting Stock Prices Using Historical Price Data, Sentiment Analysis and Deep Learning
 
-#### Historical Data: S&P500 Index
+#### Historical Data: S&P 500, DJIA, NASDAQ, NYSE
 
 #### Textual Data: News Headlines from Forbes.com
 
 #### Deep Learning Model: Long Short-Term Memory (LSTM)
 
 #### Steps for Predicting
+
+0. [Preparing Historical Data](./00_download_historical_data.ipynb)
+	- obtaining historical OHLCV data of S&P 500, DJIA, NYSE and NASDAQ indices
 
 1. [Browsing, Cleaning and Analysing Textual Input](./01_browse_dataset.ipynb)
 	- dealing with missing fields
@@ -19,6 +22,7 @@
 
 ##### Libraries
 
+- yfinance
 - pandas
 - sklearn
 - wordcloud
