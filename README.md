@@ -1,10 +1,10 @@
 ## Predicting Stock Prices Using Historical Price Data, Sentiment Analysis and Deep Learning
 
-### Historical Data: S&P500 Index
+#### Historical Data: S&P500 Index
 
-### Textual Data: News Headlines from Forbes.com
+#### Textual Data: News Headlines from Forbes.com
 
-### Deep Learning Model: Long Short-Term Memory (LSTM)
+#### Deep Learning Model: Long Short-Term Memory (LSTM)
 
 #### Steps for Predicting
 
@@ -23,3 +23,5 @@
 - sklearn
 - wordcloud
 - matplotlib
+
+##### Textual data were crawled using crawler provided in [Financial Textual Data Scraper](https://github.com/amirali022/fintxt)
