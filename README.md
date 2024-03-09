@@ -31,5 +31,6 @@
 - sklearn
 - wordcloud
 - matplotlib
+- nltk + vader_lexicon
 
 ##### Textual data were crawled using crawler provided in [Financial Textual Data Scraper](https://github.com/amirali022/fintxt)
