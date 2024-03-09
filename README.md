@@ -20,6 +20,9 @@
 	- calculate sentiment scores (neg, neu, pos, compound) using VADER lexicon
 	- plotting compound scores histogram
 
+3. [Preparing Data](./03_data_prepration.ipynb)
+	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
+
 ##### Requirements
 
 - python 3.11
