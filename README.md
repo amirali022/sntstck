@@ -16,6 +16,10 @@
 	- creating word frequency features and visualization
 	- preparing text data for sentiment analysis
 
+2. [Calculating Sentiment Score](./02_sentiment_analysis.ipynb)
+	- calculate sentiment scores (neg, neu, pos, compound) using VADER lexicon
+	- plotting compound scores histogram
+
 ##### Requirements
 
 - python 3.11
