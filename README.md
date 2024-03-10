@@ -23,6 +23,9 @@
 3. [Preparing Data](./03_data_prepration.ipynb)
 	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
 
+4. [Predicting Without Sentiment](./04_predict_sp500_without_sentiment.ipynb)
+	- predicting S&P 500 Index using LSTM and Perceptron model without including sentiment scores
+
 ##### Requirements
 
 - python 3.11
