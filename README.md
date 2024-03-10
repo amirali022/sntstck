@@ -26,6 +26,9 @@
 4. [Predicting Without Sentiment](./04_predict_sp500_without_sentiment.ipynb)
 	- predicting S&P 500 Index using LSTM and Perceptron model without including sentiment scores
 
+5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
+	- predicting S&P 500 Index using LSTM and Perceptron Model with compound sentiment score
+
 ##### Requirements
 
 - python 3.11
