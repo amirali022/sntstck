@@ -6,7 +6,7 @@ def MSE( y_true, y_pred):
 	metric.update_state( y_true, y_pred)
 	return metric.result().numpy()
 
-# Root Mean Squared Error (MSE)
+# Root Mean Squared Error (RMSE)
 def RMSE( y_true, y_pred):
 	metric = keras.metrics.RootMeanSquaredError()
 	metric.update_state( y_true, y_pred)

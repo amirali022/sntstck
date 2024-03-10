@@ -4,7 +4,17 @@
 
 #### Textual Data: News Headlines from Forbes.com
 
-#### Deep Learning Model: Long Short-Term Memory (LSTM)
+#### Prediction Models:
+
+- Long Short-Term Memory (LSTM)
+- Perceptron (Single-Neuron Neural Network with Linear Activation)
+
+#### Evaluation Metrics:
+
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Mean Absolute Error (MAE)
+- Mean Absolute Percentage Error (MAPE)
 
 #### Steps for Predicting
 
@@ -41,5 +51,6 @@
 - wordcloud
 - matplotlib
 - nltk + vader_lexicon
+- tensorflow
 
 ##### Textual data were crawled using crawler provided in [Financial Textual Data Scraper](https://github.com/amirali022/fintxt)
