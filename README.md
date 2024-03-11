@@ -6,8 +6,9 @@
 
 #### Prediction Models:
 
-- Long Short-Term Memory (LSTM)
 - Perceptron (Single-Neuron Neural Network with Linear Activation)
+- Long Short-Term Memory (LSTM)
+- Bidirectional LSTM
 
 #### Evaluation Metrics:
 
@@ -34,10 +35,10 @@
 	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
 
 4. [Predicting Without Sentiment](./04_predict_sp500_without_sentiment.ipynb)
-	- predicting S&P 500 Index using LSTM and Perceptron model without including sentiment scores
+	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM model without including sentiment scores
 
 5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
-	- predicting S&P 500 Index using LSTM and Perceptron Model with compound sentiment score
+	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score
 
 ##### Requirements
 
