@@ -14,8 +14,7 @@ class LSTM:
 
 		model.compile(
 			loss=tf.keras.losses.Huber(),
-			optimizer=tf.keras.optimizers.Adam(),
-			metrics=[ "mae"]
+			optimizer=tf.keras.optimizers.Adam()
 		)
 
 		self.model = model

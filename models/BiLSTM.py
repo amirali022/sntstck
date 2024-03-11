@@ -20,8 +20,7 @@ class BiLSTM:
 
 		model.compile(
 			loss=Huber(),
-			optimizer=Adam(),
-			metrics=[ "mae"]
+			optimizer=Adam()
 		)
 
 		self.model = model
