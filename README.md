@@ -22,10 +22,11 @@
 0. [Preparing Historical Data](./00_download_historical_data.ipynb)
 	- obtaining historical OHLCV data of S&P 500, DJIA, NYSE and NASDAQ indices
 
-1. [Browsing, Cleaning and Analysing Textual Input](./01_browse_dataset.ipynb)
-	- dealing with missing fields
-	- creating word frequency features and visualization
-	- preparing text data for sentiment analysis
+1. Browsing, Cleaning and Analysing Textual Input
+	1. [Forbes News Data](./01_1_browse_forbes_news_dataset.ipynb)
+		- dealing with missing fields
+		- creating word frequency features and visualization
+		- preparing text data for sentiment analysis
 
 2. [Calculating Sentiment Score](./02_sentiment_analysis.ipynb)
 	- calculate sentiment scores (neg, neu, pos, compound) using VADER lexicon
