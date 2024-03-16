@@ -1,16 +1,24 @@
 ## Predicting Stock Prices Using Historical Price Data, Sentiment Analysis and Deep Learning
 
-#### Historical Data: S&P 500, DJIA, NASDAQ, NYSE
+#### *Historical Data:* Open, High, Low, Close, Adjusted Close Price and Volume of:
+- [S&P 500](./data/input/sp500.csv)
+- [DJIA](./data/input/djia.csv)
+- [NASDAQ](./data/input/nasdaq.csv)
+- [NYSE](./data/input/nyse.csv)
 
-#### Textual Data: News Headlines from Forbes.com
+#### *Textual Data:* News Headlines of:
+- [Forbes.com](./data/input/forbes-news.csv) (title and description)
+- [CNBC.com](./data/input/cnbc-news.zip) (title, description, tags, keyPoints)
 
-#### Prediction Models:
+> Historical and textual data ranges from 2018-01-01 to 2024-03-14
+
+#### Prediction Models
 
 - Perceptron (Single-Neuron Neural Network with Linear Activation)
 - Long Short-Term Memory (LSTM)
 - Bidirectional LSTM
 
-#### Evaluation Metrics:
+#### Evaluation Metrics
 
 - Mean Squared Error (MSE)
 - Root Mean Squared Error (RMSE)
@@ -22,11 +30,10 @@
 0. [Preparing Historical Data](./00_download_historical_data.ipynb)
 	- obtaining historical OHLCV data of S&P 500, DJIA, NYSE and NASDAQ indices
 
-1. Browsing, Cleaning and Analysing Textual Input
-	1. [Forbes News Data](./01_1_browse_forbes_news_dataset.ipynb)
-		- dealing with missing fields
-		- creating word frequency features and visualization
-		- preparing text data for sentiment analysis
+1. Browsing, Cleaning and Analysing Textual Input [Forbes News Data](./01_1_browse_forbes_news_dataset.ipynb) and [CNBC News Data](./01_2_browse_cnbc_news_data.ipynb)
+	- dealing with missing fields
+	- creating word frequency features and visualization
+	- preparing text data for sentiment analysis
 
 2. [Calculating Sentiment Score](./02_sentiment_analysis.ipynb)
 	- calculate sentiment scores (neg, neu, pos, compound) using VADER lexicon
