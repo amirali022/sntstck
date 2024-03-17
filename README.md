@@ -35,9 +35,10 @@
 	- creating word frequency features and visualization
 	- preparing text data for sentiment analysis
 
-2. [Calculating Sentiment Score](./02_sentiment_analysis.ipynb)
-	- calculate sentiment scores (neg, neu, pos, compound) using VADER lexicon
-	- plotting compound scores histogram
+2. Calculating Sentiment Score [Forbes News Data](./02_1_forbes_news_sentiment_analysis.ipynb) and [CNBC News Data](./02_2_cnbc_news_sentiment_analysis.ipynb)
+	- calculate sentiment scores (negative, neutral, positive and compound) using VADER lexicon
+	- compound scores histogram
+	- plotting compound scores in time
 
 3. [Preparing Data](./03_data_prepration.ipynb)
 	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
