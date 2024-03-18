@@ -40,7 +40,7 @@
 	- compound scores histogram
 	- plotting compound scores in time
 
-3. [Preparing Data](./03_data_prepration.ipynb)
+3. Preparing Data [Forbes Sentiment Data](./03_1_data_prepration_forbes.ipynb) and [CNBC Sentiment Data](./03_2_data_prepration_cnbc.ipynb)
 	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
 
 4. [Predicting Without Sentiment](./04_predict_sp500_without_sentiment.ipynb)
