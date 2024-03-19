@@ -28,26 +28,36 @@
 #### Steps for Predicting
 
 0. [Preparing Historical Data](./00_download_historical_data.ipynb)
-	- obtaining historical OHLCV data of S&P 500, DJIA, NYSE and NASDAQ indices
+	
+	obtaining historical OHLCV data of S&P 500, DJIA, NYSE and NASDAQ indices
 
 1. Browsing, Cleaning and Analysing Textual Input [Forbes News Data](./01_1_browse_forbes_news_dataset.ipynb) and [CNBC News Data](./01_2_browse_cnbc_news_data.ipynb)
+
+	these notebooks contains following procedures:
+
 	- dealing with missing fields
-	- creating word frequency features and visualization
+	- creating word frequency features (TF-IDF and BoW) and visualization
 	- preparing text data for sentiment analysis
 
 2. Calculating Sentiment Score [Forbes News Data](./02_1_forbes_news_sentiment_analysis.ipynb) and [CNBC News Data](./02_2_cnbc_news_sentiment_analysis.ipynb)
+
+	these notebooks contains following procedures:
+
 	- calculate sentiment scores (negative, neutral, positive and compound) using VADER lexicon
 	- compound scores histogram
-	- plotting compound scores in time
+	- plotting compound scores over time
 
 3. Preparing Data [Forbes Sentiment Data](./03_1_data_prepration_forbes.ipynb) and [CNBC Sentiment Data](./03_2_data_prepration_cnbc.ipynb)
-	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
+	
+	concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
 
 4. Predicting Without Sentiment
 	
-	predicting adjusted close price using historical adjusted close price
-	- predict S&P 500
-		- [Support Vector Regression (SVR)](./04_01_predict_sp500_without_sentiment_SVR.ipynb)
+	predicting adjusted close price using historical data
+	
+	- S&P 500
+		- [Support Vector Regression (SVR)](./04_01_01_predict_sp500_without_sentiment_SVR.ipynb)
+		- [Perceptron](./04_01_02_predict_sp500_without_sentiment_Perceptron.ipynb)
 
 5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
 	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score

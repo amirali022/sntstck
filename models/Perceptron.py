@@ -1,18 +1,18 @@
-import os
-os.environ[ "TF_CPP_MIN_LOG_LEVEL"] = "3"
-import tensorflow as tf
-tf.compat.v1.logging.set_verbosity( tf.compat.v1.logging.ERROR)
+from keras.layers import Dense
+from keras.models import Sequential
+from keras.losses import MeanSquaredError
+from keras.optimizers import Adam
 import matplotlib.pyplot as plt
 
 class Perceptron:
-	def __init__( self,input_shape):
-		model = tf.keras.models.Sequential( [
-			tf.keras.layers.Dense( 1, input_shape=input_shape)
+	def __init__( self, input_shape):
+		model = Sequential( [
+			Dense( 1, input_shape=input_shape)
 		])
 
 		model.compile(
-			loss=tf.keras.losses.MeanSquaredError(),
-			optimizer=tf.keras.optimizers.Adam()
+			loss=MeanSquaredError(),
+			optimizer=Adam()
 		)
 
 		self.model = model
@@ -21,12 +21,13 @@ class Perceptron:
 	def summary( self):
 		self.model.summary()
 
-	def fit( self, input, label, epochs, batch_size):
+	def fit( self, input, target, epochs, batch_size, verbose=0):
 		self.history = self.model.fit(
 			input,
-			label, 
+			target, 
 			epochs=epochs,
-			batch_size=batch_size
+			batch_size=batch_size,
+			verbose=verbose
 		)
 
 	def plot_loss( self):
@@ -40,6 +41,6 @@ class Perceptron:
 			print( "You Need to Call fit method first")
 	
 	def predict( self, input):
-		y_pred = self.model.predict( input)
+		y_pred = self.model.predict( input, verbose=0)
 
 		return y_pred
