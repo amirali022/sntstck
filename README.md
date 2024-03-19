@@ -43,8 +43,11 @@
 3. Preparing Data [Forbes Sentiment Data](./03_1_data_prepration_forbes.ipynb) and [CNBC Sentiment Data](./03_2_data_prepration_cnbc.ipynb)
 	- concatenating OHLCV data with sentiment scores for S&P 500, DJIA, NYSE and NASDAQ indices
 
-4. [Predicting Without Sentiment](./04_predict_sp500_without_sentiment.ipynb)
-	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM model without including sentiment scores
+4. Predicting Without Sentiment
+	
+	predicting adjusted close price using historical adjusted close price
+	- predict S&P 500
+		- [Support Vector Regression (SVR)](./04_01_predict_sp500_without_sentiment_SVR.ipynb)
 
 5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
 	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score

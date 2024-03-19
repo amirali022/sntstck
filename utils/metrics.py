@@ -30,4 +30,4 @@ def evaluate( y_true, y_pred):
 	mae = MAE( y_true, y_pred)
 	mape = MAPE( y_true, y_pred)
 
-	print( f"MSE: { mse:.2f}\nRMSE: { rmse:.2f}\nMAE: { mae:.2f}\nMAPE: { mape:.2f}%")
+	return mse, rmse, mae, mape
