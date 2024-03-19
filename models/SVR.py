@@ -12,9 +12,9 @@ class SupportVectorRegressor:
 
 		self.model = model
 
-	def fit( self, input, label):
+	def fit( self, input, target):
 
-		self.model.fit( reshaper( input), label)
+		self.model.fit( reshaper( input), target)
 
 	def predict( self, input):
 		y_pred = self.model.predict( reshaper( input))
