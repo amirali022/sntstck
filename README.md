@@ -71,6 +71,7 @@
 ##### Requirements
 
 - python 3.11
+- jupyter notebook
 
 ##### Libraries
 
