@@ -13,22 +13,23 @@ class RNN:
 		self.stateful = stateful
 		self.unroll = unroll
 
-
-		batch_input_shape = ( self.batch_size, self.window_size, self.input_dim)
+		b = self.batch_size if self.stateful else None
+		
+		batch_input_shape = ( b, self.window_size, self.input_dim)
 
 		model = Sequential( [
 			SimpleRNN(
 				neurons,
 				batch_input_shape=batch_input_shape,
-				stateful=stateful,
+				stateful=self.stateful,
 				return_sequences=True,
-				unroll=unroll
+				unroll=self.unroll
 			),
 			SimpleRNN(
 				neurons,
 				return_sequences=False,
-				stateful=stateful,
-				unroll=unroll
+				stateful=self.stateful,
+				unroll=self.unroll
 			),
 			Dense( 1)
 		])
@@ -68,18 +69,23 @@ class RNN:
 			print( "You Need to Call fit method first")
 
 	def predict( self, input, batch_size=1, verbose=0):
-		rnn = RNN(
+		model = self.model
+
+		if self.stateful:
+			rnn = RNN(
 			neurons=self.neurons,
 			batch_size=batch_size,
 			window_size=self.window_size,
 			input_dim=self.input_dim,
 			stateful=self.stateful,
 			unroll=self.unroll
-		)
+			)
 
-		rnn.model.set_weights( self.model.get_weights())
+			rnn.model.set_weights( self.model.get_weights())
 
-		y_pred = rnn.model.predict(
+			model = rnn.model
+
+		y_pred = model.predict(
 			input,
 			batch_size=batch_size,
 			verbose=verbose
