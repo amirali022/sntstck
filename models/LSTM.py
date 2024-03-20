@@ -1,20 +1,42 @@
-import os
-os.environ[ "TF_CPP_MIN_LOG_LEVEL"] = "3"
-import tensorflow as tf
-tf.compat.v1.logging.set_verbosity( tf.compat.v1.logging.ERROR)
+from keras.layers import LSTM, Dense
+from keras.models import Sequential
+from keras.losses import MeanSquaredError
+from keras.optimizers import Adam
 import matplotlib.pyplot as plt
 
-class LSTM:
-	def __init__( self, neurons, input_shape):
-		model = tf.keras.models.Sequential( [
-			tf.keras.layers.LSTM( neurons, input_shape=input_shape, return_sequences=True),
-			tf.keras.layers.LSTM( neurons, return_sequences=False),
-			tf.keras.layers.Dense( 1)
+class LongShortTermMemory:
+	def __init__( self, neurons, batch_size, window_size, input_dim, stateful=True, unroll=True):
+		self.neurons = neurons
+		self.batch_size = batch_size
+		self.window_size = window_size
+		self.input_dim = input_dim
+		self.stateful = stateful
+		self.unroll = unroll
+		
+		b = self.batch_size if self.stateful else None
+		
+		batch_input_shape = ( b, self.window_size, self.input_dim)
+
+		model = Sequential( [
+			LSTM(
+				neurons,
+				batch_input_shape=batch_input_shape,
+				stateful=self.stateful,
+				return_sequences=True,
+				unroll=self.unroll
+			),
+			LSTM(
+				neurons,
+				stateful=self.stateful,
+				return_sequences=False,
+				unroll=self.unroll
+			),
+			Dense( 1)
 		])
 
 		model.compile(
-			loss=tf.keras.losses.Huber(),
-			optimizer=tf.keras.optimizers.Adam()
+			loss=MeanSquaredError(),
+			optimizer=Adam()
 		)
 
 		self.model = model
@@ -23,13 +45,18 @@ class LSTM:
 	def summary( self):
 		self.model.summary()
 
-	def fit( self, input, label, epochs, batch_size):
+	def fit( self, input, target, epochs, verbose=0):
 		self.history = self.model.fit(
 			input,
-			label,
+			target,
 			epochs=epochs,
-			batch_size=batch_size
+			batch_size=self.batch_size,
+			shuffle=not self.stateful,
+			verbose=verbose
 		)
+
+		if self.stateful:
+			self.model.reset_states()
 
 	def plot_loss( self):
 		if( self.history is not None):
@@ -41,7 +68,27 @@ class LSTM:
 		else:
 			print( "You Need to Call fit method first")
 
-	def predict( self, input):
-		y_pred = self.model.predict( input)
+	def predict( self, input, batch_size=1, verbose=0):
+		model = self.model
+
+		if self.stateful:
+			lstm = LongShortTermMemory(
+				neurons=self.neurons,
+				batch_size=batch_size,
+				window_size=self.window_size,
+				input_dim=self.input_dim,
+				stateful=self.stateful,
+				unroll=self.unroll
+			)
+
+			lstm.model.set_weights( self.model.get_weights())
+
+			model = lstm.model
+			
+		y_pred = model.predict(
+			input,
+			batch_size=batch_size,
+			verbose=verbose
+		)
 
 		return y_pred

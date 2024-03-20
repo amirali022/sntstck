@@ -59,6 +59,7 @@
 		- [Support Vector Regression (SVR)](./04_01_01_predict_sp500_without_sentiment_SVR.ipynb)
 		- [Perceptron](./04_01_02_predict_sp500_without_sentiment_Perceptron.ipynb)
 		- [RNN](./04_01_03_predict_sp500_without_sentiment_RNN.ipynb)
+		- [LSTM](./04_01_04_predict_sp500_without_sentiment_LSTM.ipynb)
 
 5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
 	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score
