@@ -7,3 +7,4 @@ from .SVR import SupportVectorRegressor
 from .Perceptron import Perceptron
 from .RNN import RNN
 from .LSTM import LongShortTermMemory
+from .GRU import GatedRecurrentUnit
