@@ -10,3 +10,4 @@ from .LSTM import LongShortTermMemory
 from .GRU import GatedRecurrentUnit
 from .BiRNN import BiRNN
 from .BiLSTM import BiLSTM
+from .BiGRU import BiGRU

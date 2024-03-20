@@ -60,6 +60,10 @@
 		- [Perceptron](./04_01_02_predict_sp500_without_sentiment_Perceptron.ipynb)
 		- [RNN](./04_01_03_predict_sp500_without_sentiment_RNN.ipynb)
 		- [LSTM](./04_01_04_predict_sp500_without_sentiment_LSTM.ipynb)
+		- [GRU](./04_01_05_predict_sp500_without_sentiment_GRU.ipynb)
+		- [Bi-RNN](./04_01_06_predict_sp500_without_sentiment_BiRNN.ipynb)
+		- [Bi-LSTM](./04_01_07_predict_sp500_without_sentiment_BiLSTM.ipynb)
+		- [Bi-GRU](./04_01_08_predict_sp500_without_sentiment_BiGRU.ipynb)
 
 5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
 	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score
