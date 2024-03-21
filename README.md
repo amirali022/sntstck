@@ -85,7 +85,7 @@
 			- [Bi-GRU](./05_01_01_08_predict_sp500_with_forbes_sentiment_BiGRU.ipynb)
 		- CNBC
 			- [Support Vector Regression (SVR)](./05_01_02_01_predict_sp500_with_cnbc_sentiment_SVR.ipynb)
-			- [Perceptron]
+			- [Perceptron](./05_01_02_02_predict_sp500_with_cnbc_sentiment_Perceptron.ipynb)
 			- [RNN]
 			- [LSTM]
 			- [GRU]
