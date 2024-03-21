@@ -88,7 +88,7 @@
 			- [Perceptron](./05_01_02_02_predict_sp500_with_cnbc_sentiment_Perceptron.ipynb)
 			- [RNN](./05_01_02_03_predict_sp500_with_cnbc_sentiment_RNN.ipynb)
 			- [LSTM](./05_01_02_04_predict_sp500_with_cnbc_sentiment_LSTM.ipynb)
-			- [GRU]
+			- [GRU](./05_01_02_05_predict_sp500_with_cnbc_sentiment_GRU.ipynb)
 			- [Bi-RNN]
 			- [Bi-LSTM]
 			- [Bi-GRU]
