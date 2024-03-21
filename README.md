@@ -76,7 +76,7 @@
 	- S&P 500
 		- Forbes
 			- [Support Vector Regression (SVR)](./05_01_01_01_predict_sp500_with_forbes_sentiment_SVR.ipynb)
-			- [Perceptron]
+			- [Perceptron](./05_01_01_02_predict_sp500_with_forbes_sentiment_Perceptron.ipynb)
 			- [RNN]
 			- [LSTM]
 			- [GRU]
