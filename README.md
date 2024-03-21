@@ -79,7 +79,7 @@
 			- [Perceptron](./05_01_01_02_predict_sp500_with_forbes_sentiment_Perceptron.ipynb)
 			- [RNN](./05_01_01_03_predict_sp500_with_forbes_sentiment_RNN.ipynb)
 			- [LSTM](./05_01_01_04_predict_sp500_with_forbes_sentiment_LSTM.ipynb)
-			- [GRU]
+			- [GRU](./05_01_01_05_predict_sp500_with_forbes_sentiment_GRU.ipynb)
 			- [Bi-RNN]
 			- [Bi-LSTM]
 			- [Bi-GRU]
