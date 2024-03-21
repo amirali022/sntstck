@@ -91,7 +91,7 @@
 			- [GRU](./05_01_02_05_predict_sp500_with_cnbc_sentiment_GRU.ipynb)
 			- [Bi-RNN](./05_01_02_06_predict_sp500_with_cnbc_sentiment_BiRNN.ipynb)
 			- [Bi-LSTM](./05_01_02_07_predict_sp500_with_cnbc_sentiment_BiLSTM.ipynb)
-			- [Bi-GRU]
+			- [Bi-GRU](./05_01_02_08_predict_sp500_with_cnbc_sentiment_BiGRU.ipynb)
 
 	- DJIA [To-Do]
 	- NYSE [To-Do]
