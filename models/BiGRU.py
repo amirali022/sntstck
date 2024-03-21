@@ -5,7 +5,7 @@ from keras.optimizers import Adam
 import matplotlib.pyplot as plt
 
 class BiGRU:
-	def __init__( self, neurons, batch_size, window_size, input_dim, stateful=True, unroll=True):
+	def __init__( self, neurons, batch_size, window_size, input_dim, stateful=False, unroll=True):
 		self.neurons = neurons
 		self.batch_size = batch_size
 		self.window_size = window_size
