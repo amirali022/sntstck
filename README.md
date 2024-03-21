@@ -82,7 +82,7 @@
 			- [GRU](./05_01_01_05_predict_sp500_with_forbes_sentiment_GRU.ipynb)
 			- [Bi-RNN](./05_01_01_06_predict_sp500_with_forbes_sentiment_BiRNN.ipynb)
 			- [Bi-LSTM](./05_01_01_07_predict_sp500_with_forbes_sentiment_BiLSTM.ipynb)
-			- [Bi-GRU]
+			- [Bi-GRU](./05_01_01_08_predict_sp500_with_forbes_sentiment_BiGRU.ipynb)
 		- CNBC
 			- [Support Vector Regression (SVR)]
 			- [Perceptron]
@@ -111,5 +111,6 @@
 - matplotlib
 - nltk + vader_lexicon
 - tensorflow
+- keras
 
 ##### Textual data were crawled using crawler provided in [Financial Textual Data Scraper](https://github.com/amirali022/fintxt)
