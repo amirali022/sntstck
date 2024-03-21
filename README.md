@@ -65,8 +65,37 @@
 		- [Bi-LSTM](./04_01_07_predict_sp500_without_sentiment_BiLSTM.ipynb)
 		- [Bi-GRU](./04_01_08_predict_sp500_without_sentiment_BiGRU.ipynb)
 
-5. [Predicting With Sentiment](./05_predict_sp500_with_sentiment.ipynb)
-	- predicting S&P 500 Index using Perceptron, LSTM and Bi-LSTM Model with compound sentiment score
+	- DJIA [To-Do]
+	- NYSE [To-Do]
+	- NASDAQ [To-Do]
+
+5. Predicting With Sentiment
+	
+	predicting adjusted close price using historical data and compound sentiment score
+
+	- S&P 500
+		- Forbes
+			- [Support Vector Regression (SVR)](./05_01_01_01_predict_sp500_with_forbes_sentiment_SVR.ipynb)
+			- [Perceptron]
+			- [RNN]
+			- [LSTM]
+			- [GRU]
+			- [Bi-RNN]
+			- [Bi-LSTM]
+			- [Bi-GRU]
+		- CNBC
+			- [Support Vector Regression (SVR)]
+			- [Perceptron]
+			- [RNN]
+			- [LSTM]
+			- [GRU]
+			- [Bi-RNN]
+			- [Bi-LSTM]
+			- [Bi-GRU]
+
+	- DJIA [To-Do]
+	- NYSE [To-Do]
+	- NASDAQ [To-Do]
 
 ##### Requirements
 
