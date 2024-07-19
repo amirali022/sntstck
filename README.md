@@ -15,8 +15,12 @@
 #### Prediction Models
 
 - Perceptron (Single-Neuron Neural Network with Linear Activation)
+- Recurrent Neural Network (RNN)
 - Long Short-Term Memory (LSTM)
+- Gated Recurrent Unit (GRU)
+- Bidirectional RNN
 - Bidirectional LSTM
+- Bidirectional GRU
 
 #### Evaluation Metrics
 
